@@ -30,11 +30,11 @@ public class Program {
 		for (Seller x : list) {
 			System.out.println(x);
 
-		}
+		}/*
 		System.out.println("\nTEST 4: seller insert");
 		Seller NewSeller = new Seller(null, "Gabriel", "gabriel@gmail.com", new Date(), 4000.0, department);
 		sellerDao.insert(NewSeller);
-		System.out.println("inserted! New id = " + NewSeller.getId());
+		System.out.println("inserted! New id = " + NewSeller.getId());*/
 		
 		System.out.println("\nTEST 5: seller update");
 		seller = sellerDao.findById(10);
@@ -42,5 +42,15 @@ public class Program {
 		seller.setEmail("jomarc@gmail.com");
 		sellerDao.update(seller);
 		System.out.println("Update Completed!");
+		
+		System.out.println("\nTEST 6: seller DeleteById");
+		sellerDao.deleteById(11);
+		sellerDao.deleteById(12);
+		sellerDao.deleteById(13);
+		sellerDao.deleteById(14);
+		sellerDao.deleteById(15);
+		sellerDao.deleteById(16);
+		sellerDao.deleteById(17);
+		System.out.println("Delete Completed!");
 	}
 }
