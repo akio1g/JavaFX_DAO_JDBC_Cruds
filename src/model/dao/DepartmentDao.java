@@ -4,7 +4,7 @@ import java.util.List;
 
 import model.entities.Department;
 
-public interface ClientDao {
+public interface DepartmentDao {
 	void insert(Department client);
 	void update(Department client);
 	void deleteById(Integer id);
